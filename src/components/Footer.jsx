@@ -1,7 +1,7 @@
 import React from 'react'
 import { FaBars, FaTimes, FaGithub, FaLinkedin } from 'react-icons/fa'
 import { HiOutlineMail } from 'react-icons/hi'
-import { BsFillPersonLinesFill } from 'react-icons/bs'
+import { BsWhatsapp } from 'react-icons/bs'
 
 const Footer = () => {
   return (
@@ -21,14 +21,14 @@ const Footer = () => {
               <FaGithub size={30} />
             </a>
           </li>
-          <li className='w-[60px] h-[60px] flex justify-between items-center  bg-[#6fc2b0] rounded-full'>
-            <a className='flex justify-between items-end w-full text-gray-300' href='/'>
+          <li className='w-[60px] h-[60px] flex justify-between items-center  bg-[#CD853F] rounded-full'>
+            <a className='flex justify-between items-end w-full text-gray-300' href='/' target="_blank">
               <HiOutlineMail size={30} />
             </a>
           </li>
-          <li className='w-[60px] h-[60px] flex justify-between items-center  bg-[#565f69] rounded-full'>
-            <a className='flex justify-between items-end w-full text-gray-300' href='/'>
-              <BsFillPersonLinesFill size={30} />
+          <li className='w-[60px] h-[60px] flex justify-between items-center  bg-[#006400] rounded-full'>
+            <a className='flex justify-between items-end w-full text-gray-300' href='/' target="_blank">
+              <BsWhatsapp size={30} />
             </a>
           </li>
         </ul>

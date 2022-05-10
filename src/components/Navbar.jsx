@@ -1,7 +1,8 @@
 import React, { useState } from 'react'
 import { FaBars, FaTimes, FaGithub, FaLinkedin } from 'react-icons/fa'
 import { HiOutlineMail } from 'react-icons/hi'
-import { BsFillPersonLinesFill } from 'react-icons/bs'
+import { BsWhatsapp } from 'react-icons/bs'
+
 import Logo from '../assets/logocm.png'
 import Home from '../assets/home.png'
 import About from '../assets/about.png'
@@ -96,24 +97,24 @@ const Navbar = () => {
       {/* Social icons */}
       <div className='hidden lg:flex fixed flex-col top-[35%] left-0'>
         <ul>
-          <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-blue-600'>
+          <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-blue-600 rounded-r'>
             <a className='flex justify-between items-end w-full text-gray-300' href='https://www.linkedin.com/in/carlosaugustomeyer/' target="_blank">
               Linkedin <FaLinkedin size={30} />
             </a>
           </li>
-          <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#333333]'>
+          <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#333333] rounded-r'>
             <a className='flex justify-between items-end w-full text-gray-300' href='https://github.com/CarlosMeyer2021' target="_blank">
               Github <FaGithub size={30} />
             </a>
           </li>
-          <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#6fc2b0]'>
+          <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#CD853F] rounded-r'>
             <a className='flex justify-between items-end w-full text-gray-300' href='/'>
               Email <HiOutlineMail size={30} />
             </a>
           </li>
-          <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#565f69]'>
+          <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#006400] rounded-r'>
             <a className='flex justify-between items-end w-full text-gray-300' href='/'>
-              Rusume <BsFillPersonLinesFill size={30} />
+              WhatsApp <BsWhatsapp size={30} />
             </a>
           </li>
         </ul>
