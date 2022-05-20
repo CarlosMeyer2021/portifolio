@@ -11,12 +11,17 @@ import Work from '../assets/work.png'
 import Contact from '../assets/contact.png'
 import { Link } from 'react-scroll'
 
+
 const Navbar = () => {
   const [nav, setNav] = useState(false)
   const handleClick = () => {
     setNav(!nav)
   }
 
+  const api = 'https://api.whatsapp.com/send?phone'
+  const numero = 5511976225137
+  const mensagem = 'Olá, seja bem vindo ao MyPet!'
+  const zap = `${api}=${numero}&text=${mensagem}`
 
   return (
     <div className='fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#0a192f] text-gray-300'>
@@ -113,7 +118,7 @@ const Navbar = () => {
             </a>
           </li>
           <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#006400] rounded-r'>
-            <a className='flex justify-between items-end w-full text-gray-300' href='/'>
+            <a className='flex justify-between items-end w-full text-gray-300' href={zap} target="_blank">
               WhatsApp <BsWhatsapp size={30} />
             </a>
           </li>

@@ -1,4 +1,5 @@
 import Home from "./components/Home";
+import Clima from "./components/Clima";
 import Navbar from "./components/Navbar";
 import About from "./components/About";
 import Skills from "./components/Skills";
@@ -10,6 +11,7 @@ function App() {
   return (
     <div>
       <Navbar />
+      <Clima />
       <Home />
       <About />
       <Skills />
