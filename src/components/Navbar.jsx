@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { FaBars, FaTimes, FaGithub, FaLinkedin } from 'react-icons/fa'
 import { HiOutlineMail } from 'react-icons/hi'
 import { BsWhatsapp } from 'react-icons/bs'
@@ -10,6 +10,9 @@ import Skills from '../assets/skills.png'
 import Work from '../assets/work.png'
 import Contact from '../assets/contact.png'
 import { Link } from 'react-scroll'
+import Clima from './Clima'
+
+
 
 
 const Navbar = () => {
@@ -17,6 +20,8 @@ const Navbar = () => {
   const handleClick = () => {
     setNav(!nav)
   }
+
+
 
   const api = 'https://api.whatsapp.com/send?phone'
   const numero = 5511976225137
@@ -57,6 +62,8 @@ const Navbar = () => {
           </Link>
         </li>
       </ul>
+      <Clima />
+
 
       {/* Hamburgues */}
       <div onClick={handleClick} className='md:hidden z-10'>
