@@ -37,7 +37,7 @@ const Clima = () => {
   }, [])
 
   return (
-    <div className='flex fixed justify-center items-center w-full my-24 bg-[#0a192f] text-1xl text-gray-300'>
+    <div className='flex fixed justify-start items-center w-full my-28 bg-[#0a192f] text-1xl text-gray-300'>
       <div className='flex fixed justify-between items-center border-4w-[290px] bg-[#0a192f] text-1xl text-gray-300'>
         <div>
           <label className='text-gray-300 mr-3' htmlFor="cidade" >Cidade</label><br />
