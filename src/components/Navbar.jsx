@@ -10,6 +10,7 @@ import Skills from '../assets/skills.png'
 import Work from '../assets/work.png'
 import Contact from '../assets/contact.png'
 import { Link } from 'react-scroll'
+import Clima from './Clima'
 
 
 
@@ -32,6 +33,8 @@ const Navbar = () => {
       <div className='flex justify-start items-center'>
         <img className='ml-[-10px] mt-[15px]' src={Logo} alt='Logo Image' style={{ width: '180px', height: '180px' }} />
       </div>
+
+      <Clima />
 
       {/* menu */}
       <ul className='hidden md:flex'>
