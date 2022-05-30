@@ -66,7 +66,7 @@ const Contact = () => {
 
 
   return (
-    <div name='contact' className='w-full h-screen bg-[#0a192f] flex justify-center items-center p-4'>
+    <div name='contact' className='w-full h-screen bg-[#0a192f] flex justify-center items-center p-4 mb-4'>
 
       {Object.keys(formErros).length === 0 && isSubmit ? (<div className='ui message success'>{validaCampos}</div>) : (
         <pre className='hidden'>{JSON.stringify(formValues, undefined, 2)}</pre>

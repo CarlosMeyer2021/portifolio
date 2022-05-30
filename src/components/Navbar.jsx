@@ -29,17 +29,14 @@ const Navbar = () => {
   const zap = `${api}=${numero}&text=${mensagem}`
 
   return (
-    <div className='fixed flex w-full h-[80px]  justify-between items-center px-4 bg-[#0a192f] text-gray-300  border-b-4 border-pink-600'>
+    <div className='fixed w-full h-[80px] flex justify-between items-center  bg-[#0a192f] text-gray-300  border-b-4 border-pink-600 mb-6 px-2'>
 
-      <div className='sm:flex justify-start items-center'>
-        <div>
-          <img className=' w-[150px] ' src={Logo} alt='Logo Image' />
-        </div>
 
-        <div>
-          <Clima />
-        </div>
+      <div>
+        <img className=' w-[150px] h-[150px]' src={Logo} alt='Logo Image' />
       </div>
+
+
 
       {/* menu */}
       <div>
