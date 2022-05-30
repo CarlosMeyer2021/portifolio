@@ -24,59 +24,45 @@ const Clima = () => {
   }, [])
 
 
-  const dataInicial = moment().format("DD/MM/YYYY HH:mm:ss")
+  const dataInicial = moment().format("HH:mm:ss")
+  const horaInicial = moment().format("HH:mm:ss")
   const [tempoAtual, setTempoAtual] = useState(dataInicial)
+  const [horaAtual, setHoraAtual] = useState(horaInicial)
 
   useEffect(() => {
     setInterval(() => {
-      let novaData = moment().format("DD/MM/YYYY HH:mm:ss")
+      let novaData = moment().format("DD/MM/YYYY")
+      let novaHora = moment().format("HH:mm:ss")
       setTempoAtual(novaData)
+      setHoraAtual(novaHora)
     }, 1000)
 
   }, [])
 
   return (
     /*Celular fica hidden*/
-    <div className='flex justify-center items-center w-full bg-transparent text-1xl text-gray-300'>
+    <div className='flex justify-end items-center w-full bg-transparent text-sm text-gray-300 '>
 
-      <div className='flex fixed-top justify-center items-center w-[290px] h-[80px] bg-transparent text-1xl text-gray-300'>
+      <div className='fixed mt-[350px] justify-end items-center w-[120px] bg-transparent text-sm text-gray-300 pl-[40px]'>
         <div>
-          <label className='text-gray-300 mr-3' htmlFor="cidade" >Cidade</label><br />
+          <label className='text-gray-300 text-sm mr-3' htmlFor="cidade" >Cidade</label><br />
           <span className='text-pink-600 mr-3'>
             {data.name}
           </span>
         </div>
 
         <div>
-          <label htmlFor="datahora">Data  Hora</label><br />
-          <span className='text-pink-600 text mr-3'>{tempoAtual}</span>
+          <label className='text-sm' htmlFor="data">Data</label><br />
+          <span className='text-pink-600 text-sm mr-3'>{tempoAtual}</span>
+        </div>
+        <div>
+          <label className='text-sm' htmlFor="data">Hora</label><br />
+          <span className='text-pink-600 text-sm mr-3'>{horaAtual}</span>
         </div>
 
         <div>
-          <label htmlFor="tempo">Tempo</label><br />
-          <div className='flex text-pink-600'>
-            <span>{((data?.main?.temp) - 273.15).toFixed(0)} °C</span>
-          </div>
-        </div>
-      </div>
-
-
-      <div className='flex fixed justify-between items-center w-[290px] bg-transparent text-1xl text-gray-300'>
-        <div>
-          <label className='text-gray-300 mr-3' htmlFor="cidade" >Cidade</label><br />
-          <span className='text-pink-600 mr-3'>
-            {data.name}
-          </span>
-        </div>
-
-        <div>
-          <label htmlFor="datahora">Data  Hora</label><br />
-          <span className='text-pink-600 text mr-3'>{tempoAtual}</span>
-        </div>
-
-        <div>
-          <label htmlFor="tempo">Tempo</label><br />
-          <div className='flex text-pink-600'>
+          <label className='text-sm' htmlFor="tempo">Tempo</label><br />
+          <div className='flex text-pink-600 text-sm'>
             <span>{((data?.main?.temp) - 273.15).toFixed(0)} °C</span>
           </div>
         </div>

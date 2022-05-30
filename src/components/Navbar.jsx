@@ -10,9 +10,6 @@ import Skills from '../assets/skills.png'
 import Work from '../assets/work.png'
 import Contact from '../assets/contact.png'
 import { Link } from 'react-scroll'
-import Clima from './Clima'
-
-
 
 
 const Navbar = () => {
@@ -22,20 +19,19 @@ const Navbar = () => {
   }
 
 
-
   const api = 'https://api.whatsapp.com/send?phone'
   const numero = 5511976225137
   const mensagem = 'Olá, seja bem vindo ao MyPet!'
   const zap = `${api}=${numero}&text=${mensagem}`
 
   return (
-    <div className='fixed w-full h-[80px] flex justify-between items-center  bg-[#0a192f] text-gray-300  border-b-4 border-pink-600 mb-6 px-2'>
+    <div className='fixed w-full h-[80px] mt-[10px] flex justify-between items-center  bg-[#0a192f] text-gray-300  border-b-4 border-pink-600 mb-6 px-2'>
 
-
-      <div>
-        <img className=' w-[150px] h-[150px]' src={Logo} alt='Logo Image' />
+      <div className='w-full'>
+        <div>
+          <img className='h-[150px]' src={Logo} alt='Logo Image' />
+        </div>
       </div>
-
 
 
       {/* menu */}
