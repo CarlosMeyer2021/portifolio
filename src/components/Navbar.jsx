@@ -31,7 +31,7 @@ const Navbar = () => {
   return (
     <div className='fixed flex w-full h-[80px]  justify-between items-center px-4 bg-[#0a192f] text-gray-300  border-b-4 border-pink-600'>
 
-      <div className='flex justify-start items-center'>
+      <div className='sm:flex justify-start items-center'>
         <div>
           <img className=' w-[150px] ' src={Logo} alt='Logo Image' />
         </div>

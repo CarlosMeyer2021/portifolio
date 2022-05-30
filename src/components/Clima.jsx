@@ -37,7 +37,7 @@ const Clima = () => {
 
   return (
     /*Celular fica hidden*/
-    <div className='flex justify-start items-center w-full bg-[#0a192f] text-1xl text-gray-300'>
+    <div className='flex justify-start items-center w-full bg-transparent text-1xl text-gray-300'>
       <div className='flex fixed justify-between items-center border-4w-[290px] bg-[#0a192f] text-1xl text-gray-300'>
         <div>
           <label className='text-gray-300 mr-3' htmlFor="cidade" >Cidade</label><br />
