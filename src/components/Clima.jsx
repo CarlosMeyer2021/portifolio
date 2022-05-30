@@ -1,7 +1,6 @@
 import { React, useState, useEffect } from 'react'
 import axios from 'axios'
 import moment from "moment";
-import Sol from '../assets/sol.png'
 
 const Clima = () => {
   const api = '8f761d9a2228893842749a06855ff17a'
@@ -37,7 +36,8 @@ const Clima = () => {
   }, [])
 
   return (
-    <div className='flex fixed justify-center items-center w-full my-28 bg-[#0a192f] text-1xl text-gray-300'>
+    /*Celular fica hidden*/
+    <div className='flex justify-start items-center w-full bg-[#0a192f] text-1xl text-gray-300'>
       <div className='flex fixed justify-between items-center border-4w-[290px] bg-[#0a192f] text-1xl text-gray-300'>
         <div>
           <label className='text-gray-300 mr-3' htmlFor="cidade" >Cidade</label><br />
@@ -59,7 +59,33 @@ const Clima = () => {
         </div>
       </div>
 
+
+      <div className='flex fixed justify-between items-center border-4w-[290px] bg-[#0a192f] text-1xl text-gray-300'>
+        <div>
+          <label className='text-gray-300 mr-3' htmlFor="cidade" >Cidade</label><br />
+          <span className='text-pink-600 mr-3'>
+            {data.name}
+          </span>
+        </div>
+
+        <div>
+          <label htmlFor="datahora">Data  Hora</label><br />
+          <span className='text-pink-600 text mr-3'>{tempoAtual}</span>
+        </div>
+
+        <div>
+          <label htmlFor="tempo">Tempo</label><br />
+          <div className='flex text-pink-600'>
+            <span>{((data?.main?.temp) - 273.15).toFixed(0)} °C</span>
+          </div>
+        </div>
+      </div>
+
+
+
     </div>
+
+
 
   )
 
