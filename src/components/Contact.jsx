@@ -73,7 +73,7 @@ const Contact = () => {
       )}
 
 
-      <form onSubmit={handleSubmit} method='POST' className='flex flex-col max-w-[600px] w-full  sm mb-16'>
+      <form onSubmit={handleSubmit} method='POST' className='flex flex-col max-w-[600px] w-full pt-10 pb-20'>
         <ToastContainer />
         <div className='p-8'>
           <p className='text-4xl font-bold inline border-b-4 border-pink-600 text-gray-300'>Contato</p>
