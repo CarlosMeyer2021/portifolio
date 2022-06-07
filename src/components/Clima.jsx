@@ -24,7 +24,7 @@ const Clima = () => {
   }, [])
 
 
-  const dataInicial = moment().format("HH:mm:ss")
+  const dataInicial = moment().format("DD/MM/YYYY")
   const horaInicial = moment().format("HH:mm:ss")
   const [tempoAtual, setTempoAtual] = useState(dataInicial)
   const [horaAtual, setHoraAtual] = useState(horaInicial)
@@ -41,9 +41,9 @@ const Clima = () => {
 
   return (
     /*Celular fica hidden*/
-    <div className='flex justify-end items-center w-full bg-transparent text-sm text-gray-300 '>
+    <div className='flex justify-center items-center w-full bg-transparent text-sm text-gray-300 '>
 
-      <div className='fixed mt-[350px] justify-end items-center w-[120px] bg-transparent text-sm text-gray-300 pl-[40px]'>
+      <div className='fixed flex mt-[230px] justify-between items-center w-[300px] bg-transparent text-sm text-gray-300 pl-[40px] border-4 border-red-600'>
         <div>
           <label className='text-gray-300 text-sm mr-3' htmlFor="cidade" >Cidade</label><br />
           <span className='text-pink-600 mr-3'>
